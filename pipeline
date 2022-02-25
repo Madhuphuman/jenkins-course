@@ -1,0 +1,12 @@
+node {
+    stage('clone from repo')
+    {
+        git branch: 'main', url: 'https://github.com/Madhuphuman/jenkins-course.git'
+        sh 'echo "clone is done"'
+    }
+    
+    stage('print content'){
+        sh 'ls'
+        sh 'cat README.md'
+    }
+}
