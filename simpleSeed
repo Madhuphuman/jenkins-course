@@ -1,4 +1,4 @@
-job('simpleTrigger'){
+job('simpleTrigger1'){
   parameters{
     stringParam('Object','Undescribed','This paramater describes a type of object')
   }
